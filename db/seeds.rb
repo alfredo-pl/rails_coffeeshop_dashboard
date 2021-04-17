@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+2000.times do
+    Sale.create!(
+        origin: Faker::Coffee.origin, 
+        mix: Faker::Coffee.name, 
+        price: rand(1990...5490), 
+        date_time: Faker::Date.between(from: '2017-01-01', to: Date.today)
+        )
+end
