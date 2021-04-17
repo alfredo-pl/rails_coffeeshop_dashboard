@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyString
+  mix: MyString
+  price: 1
+  date_time: 2021-04-17 14:53:46
+
+two:
+  origin: MyString
+  mix: MyString
+  price: 1
+  date_time: 2021-04-17 14:53:46
