@@ -10,7 +10,7 @@
 2000.times do
     Sale.create!(
         origin: Faker::Coffee.origin, 
-        mix: Faker::Coffee.name, 
+        mix: Faker::Coffee.blend_name, 
         price: rand(1990...5490), 
         date_time: Faker::Date.between(from: '2017-01-01', to: Date.today)
         )
