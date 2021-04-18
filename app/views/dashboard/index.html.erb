@@ -1,0 +1,32 @@
+<h1>Dashboard Coffee</h1>
+<div>
+    <h2>Monthly Sales</h2>
+    <%= column_chart  @sales_group_by_month, legend: "top",title: "Last 12 months",prefix: "$",thousands: "." %>
+</div>
+
+<div>
+    <h2>Count Monthly Sales</h2>
+    <%= column_chart  @sales_group_by_month_count, legend: "top",title: "Last 12 months" %>
+</div>
+
+<div>
+    <h2>Avg Monthly Sales</h2>
+    <%= column_chart  @sales_group_by_month_prom,legend: "top",title: "Last 12 months",prefix: "$",thousands: ".", decimal: "," %>
+</div>
+
+
+<div>
+    <h2>Sales by Origin</h2>
+    <%= pie_chart @sales_pie_12, legend: "top", title: "Last 12 months", label: "count" %>
+    <%= pie_chart @sales_pie_6, legend: "top", title: "Last 6 months", label: "count" %>
+    <%= pie_chart @sales_pie_3, legend: "top", title: "Last 3 months", label: "count" %>
+    <%= pie_chart @sales_pie_1, legend: "top", title: "Last 1 months", label: "count" %>
+</div>
+
+<div>
+    <h2>Sales by Mix</h2>
+     <%= pie_chart @sales_pie_12m, legend: "top", title: "Last 12 months", label: "count" %>
+    <%= pie_chart @sales_pie_6m, legend: "top", title: "Last 6 months", label: "count" %>
+    <%= pie_chart @sales_pie_3m, legend: "top", title: "Last 3 months", label: "count" %>
+    <%= pie_chart @sales_pie_1m, legend: "top", title: "Last 1 months", label: "count" %>
+</div>
